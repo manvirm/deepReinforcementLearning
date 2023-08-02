@@ -18,3 +18,6 @@ for episode in range(1, episodes+1):
         _, reward, done, _ = env.step(action)
         score += reward
         env.render()
+
+    print(f"Episode {episode}, Score: {score}")
+env.close()
